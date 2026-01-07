@@ -1,6 +1,6 @@
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma
-from config import MODEL_NAME, HF_TOKEN
+from src.config import MODEL_NAME, HF_TOKEN
 
 def build_retriever(docs):
     embeddings = HuggingFaceEmbeddings(
